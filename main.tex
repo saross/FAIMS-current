@@ -59,8 +59,8 @@
 %\setbeamertemplate{footline}{\strut~\texttt{https://osf.io/v5jp7/}\hfill\insertframenumber~/~\inserttotalframenumber\strut~~~}
 
 \title{Seven years of FAIMS Mobile} % Presentation title
-\author{Shawn A Ross}               % Presentation author
-\institute{Office of the Deputy Vice-Chancellor (Research)}         % Author affiliation
+\author{Shawn A Ross | Brian Ballsun-Stant}               % Presentation author
+\institute{Faculty of Arts}         % Author affiliation
 \date{\today}                 % Today's date  
 \begin{document}
 
@@ -127,15 +127,15 @@
     Consider the infrastructure needed to manage the three main phases of the data lifecycle
     \begin{itemize}[label=\textbullet]
         \item Publication (most mature): domain-specific repositories.
-        \item Processing and analysis (less mature): project-level code \cite{Stewart_Lowndes2017-lj}, then Virtual Labs / Science Gateways, like \cite{Alveo2019-tk} in language analysis.
-        \item Capture (least mature): most varied, needs to work offline under difficult conditions. Commercial solutions insufficient \cite{Bureau_of_Reclamation2017-xl}.
+        \item Processing and analysis (less mature): project-level code \cite{Stewart_Lowndes2017-lj}, then Virtual Labs / Science Gateways, \cite{Alveo2019-tk}.
+        \item Capture (least mature): most varied, needs to work offline under difficult conditions. Existing commercial solutions insufficient \cite{Bureau_of_Reclamation2017-xl}.
     \end{itemize}
 \end{frame}
 
 
 % Slides to speak to at WSU 5 June 2019
 
-\section{Lessons from FAIMS: summary}
+\section{The FAIMS approach: summary}
 
 \begin{frame}{Research Specific}
  \begin{figure}[H]
@@ -169,37 +169,57 @@
  \begin{figure}[H]
     \centering
         \includegraphics[width=.75\textwidth]{figures/GPLv3_Logo.eps}
-        \caption{FAIMS Mobile 'core' code is GPLv3}
+        \caption{FAIMS Mobile 'core' code is GPLv3; 'module' (customisation) code is also open; everything is on GitHub}
         \label{fig:FAIMS-github-OSS}
  \end{figure}
 \end{frame}
 
-\begin{frame}{Small data collection infrastructure: key messages}
+\begin{frame}{Key research-specific FAIMS Mobile features}
     \begin{itemize}[label=\textbullet]
-        \item We deserve research-specific software.
-        \item Diverse practices and limited resources require generalised software.
-        \item Do one thing well with modular and federated software (but slice the pie thoughtfully).
-        \item Open-source software has advantages (but is difficult to sustain). 
-        \item Scope requirements carefully.
-        \item Invest in outreach and engagement.
+        \item Fundamentally customisable (interpreter + definition files).
+        \item Tightly binds structured, geospatial, multimedia, and free text data.
+        \item Works offline.
+        \item Automated bi-directional synchronisation using local or online server
+        \item Record history: append-only datastore, versioning, rollback.
+        \item Mobile GIS.
+        \item Connects to internal and external sensors, Bluetooth / USB devices.
+        \item Multilingual.
+        \item Granular help.
+        \item Granular metadata / uncertainty.
+        \item Generalised export.
+        \item `Hooks’ for data interoperability, Open Linked Data approaches.
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Challenges and paths forward}
-  How do we get from where we are now to where we want to be?
+\begin{frame}{FAIMS publications}
       \begin{itemize}[label=\textbullet]
-        \item Understand the evolving expectations of transparent research. 
-        \item Look past desktop software (Excel, ARCGIS, Filemaker, Access, etc.).
-        \item Rally around emerging research- and domain-specific solutions (even if imperfect).
-        \item Overcome `not invented here'; you don't need a bespoke solution.
-        \item Budget for `ground-up' transparency (data and code). Up-front costs will be high but offer longer-term payoffs (in costs, time, and quality).
-        \item Implement (and budget for) fundamental good practice in data and code management before other technologies.
-        \item Improve research design (prioritise approach over methods) \cite{Muthukrishna2019-kt, Hole1973-cy}
+        \item \cite{Sobotkova2018-al}
+        \item \cite{Ballsun-Stanton2018-zd}
+        \item \cite{VanValkenburgh2018-hv}
+        \item \cite{sobotkova2016-mx}
+        \item \cite{Ross2015-ph} 
+        \item \cite{Sobotkova2015-lq}
+        \item \cite{Ross2013-hi}
     \end{itemize}
+\end{frame}
+
+\begin{frame}{Thank you!}
+
+%This presentation is available at:
+%\texttt{https://osf.io/v5jp7/}
+
+Source code for this presentation is available at: 
+\texttt{https://github.com/ saross/Ross-FAIMS-intro}.
+
+FAIMS Project software and documentation can be found at:
+\texttt{https://github.com/faims}.
+
+This work is licensed under a Creative Commons Attribution 4.0 International License.
+
 \end{frame}
 
 % In-depth information for reference
-\section{Lessons from FAIMS: in-depth}
+\section{The FAIMS approach: in-depth}
 
 \begin{frame}{Introduction to the FAIMS Project}
     \begin{itemize}[label=\textbullet]
@@ -220,41 +240,24 @@
  \end{figure}
 \end{frame}
 
-\begin{frame}{Key research-specific FAIMS Mobile features}
+\begin{frame}{Field data capture infrastructure: a manifesto}
     \begin{itemize}[label=\textbullet]
-        \item Fundamentally customisable.
-        \item Tightly binds structured, geospatial, multimedia, and free text data.
-        \item Works offline.
-        \item Automated bi-directional synchronisation using local or online server
-        \item Record history: append-only datastore, versioning, rollback.
-        \item Mobile GIS.
-        \item Connects to internal and external sensors, Bluetooth / USB devices.
-        \item Multilingual.
-        \item Granular help.
-        \item Granular metadata / uncertainty.
-        \item Generalised export.
-        \item `Hooks’ for data interoperability, Open Linked Data approaches.
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Field data capture infrastructure: key messages}
-    \begin{itemize}[label=\textbullet]
-        \item We deserve research-specific software.
+        \item Our domains deserve research-specific software.
         \item Diverse practices and limited resources require generalised software.
         \item Do one thing well with modular and federated software (but slice the pie thoughtfully).
-        \item Open-source software has advantages (but is difficult to sustain). 
+        \item Open-source software supports open research and has other advantages (but is difficult to sustain). 
         \item Scope requirements carefully.
         \item Invest in outreach and engagement.
     \end{itemize}
 \end{frame}
 
 \begin{frame}{Research specific}
-    Archaeology needs (and deserves) research-specific software, contra \cite{Roosevelt2015-kd}.
+    Field research needs (and deserves) research-specific software, contra \cite{Roosevelt2015-kd}.
       \begin{itemize}[label=\textbullet]
         \item Most commercial / mass-market software does not meet research needs.
         \item Risk of lock-in, unwelcome changes to features or business models, and product discontinuation.
     \end{itemize}
-    Compare ecology in Australia: TERN, ALA, Biocollect, and associated research clouds \cite{Tern2019-sp, Ala2019-by, Ala2019-cb}.
+    Compare ecology: TERN, ALA, Biocollect, and associated research clouds \cite{Tern2019-sp, Ala2019-by, Ala2019-cb}.
 \end{frame}
 
 \begin{frame}{Generalised (not generic or bespoke)}
@@ -322,18 +325,6 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}{FAIMS publications}
-      \begin{itemize}[label=\textbullet]
-        \item \cite{Sobotkova2018-al}
-        \item \cite{Ballsun-Stanton2018-zd}
-        \item \cite{VanValkenburgh2018-hv}
-        \item \cite{sobotkova2016-mx}
-        \item \cite{Ross2015-ph} 
-        \item \cite{Sobotkova2015-lq}
-        \item \cite{Ross2013-hi}
-    \end{itemize}
-\end{frame}
-
 \section{From current practice to better practice}
 
 \begin{frame}{Challenges and paths forward}
@@ -366,22 +357,5 @@
 \bibliography{references}
 \bibliographystyle{apalike}
 \end{multicols}
-
-\begin{frame}{Thank you!}
-
-%This presentation is available at:
-%\texttt{https://osf.io/v5jp7/}
-
-Source code for this presentation is available at: 
-\texttt{https://github.com/ saross/Ross-FAIMS-current}.
-
-FAIMS Project software and documentation can be found at:
-\texttt{https://github.com/faims}.
-
-This work is licensed under a Creative Commons Attribution 4.0 International License.
-
-\end{frame}
-
-
 
 \end{document}
