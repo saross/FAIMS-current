@@ -62,6 +62,11 @@
 \author{Shawn A Ross | Brian Ballsun-Stant}               % Presentation author
 \institute{Faculty of Arts}         % Author affiliation
 \date{\today}                 % Today's date  
+
+
+
+%moved up from references.
+
 \begin{document}
 
 % Title page
@@ -159,7 +164,7 @@
 \begin{frame}{Modular and federated}
  \begin{figure}[H]
     \centering
-        \includegraphics[height=.75\textheight]{figures/FAIMS-federated.png}
+        \includegraphics[height=.75\textheight]{figures/FAIMS-federation}
         \caption{FAIMS Mobile federation}
         \label{fig:FAIMS-federation}
  \end{figure}
@@ -190,26 +195,88 @@
         \item `Hooks’ for data interoperability, Open Linked Data approaches.
     \end{itemize}
 \end{frame}
+\begin{frame}{Selected FAIMS Testimonials}
+    \begin{itemize}[label=\textbullet]
+    \item ``The tablet app worked very well in the field and I would be keen to continue using it for subsequent sampling'' -- New Zealand Soil Geochemistry
+    \item ``Being able to check in on everyone's work from my computer so easily is... revolutionary. Thank you for building such an amazing tool! …  I look forward to providing more details, but I already feel like I have 100\%{} better control over data quality, even compared to last year'' -- Proyecto Arquelogico de Zana Colonial
+    \end{itemize}
+\end{frame}
+\begin{frame}{Selected FAIMS Testimonials 2}
+    \begin{itemize}[label=\textbullet]
+    \item ``The app has been such an incredible advantage in terms of workload, data quality, and a number of other data management issues with which archaeologists regularly have to deal. It readily links disparate data types that are otherwise stored separately – such as photographs, tabular logs, and context relationships.'' -- Malawi Early-Middle Stone Age Project
+    \item ``I was really impressed with the approach FAIMS project has taken to the challenge of creating field data apps which can be very expensive. Our module was ready for testing after just one briefing.'' -- Streamwatch
+    \end{itemize}
+\end{frame}
+\begin{frame}{Selected FAIMS Testimonials 3}
+    \begin{itemize}[label=\textbullet]
+\item 
+``We’re back from the field and I cannot believe how well everything went. ... [T]he combination of the mobile lab, the sample ID/tracking and FAIMS application enabled us to average 5-6 minutes per sample site (crust, soil, rock and two plants)  in the field and about half that in the lab... Using the old school notepad and GPS approach this would have been 15 mins at best and a whole lot of misplaced photos and details, not to mention the additional hours entering the data in at night. We were able to identify missed sites as we went and completed the soils map (280 sites) and infill (36 sites) and analysis all in the 7 days. '' -- CSIRO Mineral Resources
+\end{itemize}
+\end{frame}
 
-\begin{frame}{FAIMS publications}
-      \begin{itemize}[label=\textbullet]
-        \item \cite{Sobotkova2018-al}
-        \item \cite{Ballsun-Stanton2018-zd}
-        \item \cite{VanValkenburgh2018-hv}
-        \item \cite{sobotkova2016-mx}
-        \item \cite{Ross2015-ph} 
-        \item \cite{Sobotkova2015-lq}
-        \item \cite{Ross2013-hi}
+\begin{frame}{Status and plans for the future}
+    \begin{itemize}[label=\textbullet]
+        \item FAIMS v2.6 is nearing end of its useful life.
+        \item A high-level technical plan for FAIMS v3.0 won a US design prize in 2017 \cite{Bureau_of_Reclamation2017-xl}.
+        \item Any future iteration of FAIMS must be sustainable via commercialisation as a (primarily) self-service platform.
+        \item The FAIMS team did CSIRO ON Prime in 2016, completing 70+ interviews with clients / potential clients.
+        \item We are considering applying for an ARDC Platforms and Services grant, if we can reconcile that with commercialisation.
+        \item Challenge: balancing open research / OSS with commercialisation.
     \end{itemize}
 \end{frame}
 
+\begin{frame}{Technical improvements}
+    \begin{itemize}[label=\textbullet]
+        \item Cross-platform support (Android; iOS; desktop)
+        \item Self-customisation by the user via a GUI-based web application.
+        \item Orchestrated deployment of infrastructure to (e.g.) Amazon Web Services.
+        \item Data 'round-trip' to external desktop or online software.
+        \item Exposure of data via an API
+        \item Improved scalability (application performance; synchronisation performance; server-to-server synchronisation)
+        \item Improved user management and security
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{FAIMS publications}
+Available at: \url{https://paperpile.com/shared/yk95gS}
+
+      \begin{itemize}[label=\textbullet]
+      
+      
+      {\small
+      \nocite{Sobotkova2015-lq,Sobotkova2018-al,VanValkenburgh2018-hv,Ballsun-Stanton2018-zd,Sobotkova2016-mx,Ross2015-ph,Ross2013-hi}
+        % \item \nocite{Sobotkova2018-al}
+        % \item \nocite{Ballsun-Stanton2018-zd}
+        % \item \nocite{VanValkenburgh2018-hv}
+        % \item \nocite{sobotkova2016-mx}
+        % \item \nocite{Ross2015-ph} 
+        % \item \nocite{Sobotkova2015-lq}
+        % \item \nocite{Ross2013-hi}
+\item Ballsun-Stanton, Brian, Shawn A. Ross, Adela Sobotkova, and Penny Crook. 2018. ``FAIMS Mobile: Flexible, Open-Source Software for Field Research.''
+\item Ross, Shawn Adrian, Brian Ballsun-Stanton, Adela Sobotkova, and Penny Crook. 2015. ``Building the Bazaar: Enhancing Archaeological Field Recording Through an Open Source Approach.''
+\item Ross, Shawn Adrian, Adela Sobotkova, Brian Ballsun-Stanton, and Penny Crook. 2013. ``Creating Eresearch Tools For Archaeologists: The Federated Archaeological Information Management Systems Project.''
+\item Sobotkova, Adela. 2018. ``Sociotechnical Obstacles to Archaeological Data Reuse.'' 
+
+}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{FAIMS Publications 2}
+\begin{itemize}[label=\textbullet]
+{\small
+    \item Sobotkova, Adela, Brian Ballsun-Stanton, Shawn Ross, and Penny Crook. 2015. ``Arbitrary Offline Data Capture on All of Your Androids: The FAIMS Mobile Platform.''
+\item Sobotkova, Adela, Shawn A. Ross, Brian Ballsun-Stanton, Andrew Fairbairn, Jessica Thompson, and Parker VanValkenburgh. 2016. ``Measure Twice, Cut Once: Cooperative Deployment of a Generalized, Archaeology-Specific Field Data Collection System.'' 
+\item VanValkenburgh, Parker, Luiza O. G. Silva, Chiara Repetti-Ludlow, Jake Gardner, Jackson Crook, and Brian Ballsun-Stanton. 2018. ``Mobilization as Mediation: Implementing a Tablet-Based Recording System for Ceramic Classification.''} 
+\end{itemize}
+    
+\end{frame}
 \begin{frame}{Thank you!}
 
 %This presentation is available at:
 %\texttt{https://osf.io/v5jp7/}
 
-Source code for this presentation is available at: 
-\texttt{https://github.com/ saross/Ross-FAIMS-intro}.
+PDF and source code for this presentation is available at: 
+\texttt{https://github.com/saross/FAIMS-intro/releases/tag/v2.0}.
 
 FAIMS Project software and documentation can be found at:
 \texttt{https://github.com/faims}.
@@ -227,7 +294,7 @@ This work is licensed under a Creative Commons Attribution 4.0 International Lic
         \item Developed FAIMS Mobile for field data capture \cite{Ballsun-Stanton2018-zd}.
         \item Use expanded beyond archaeology to geoscience, ecology, ethnography, linguistics, oral history.
         \item Has been customised for over 50 workflows at more than 30 projects. 
-        \item Data and workflow modelling for these customisations provided deep insights into field data capture and the infrastructure needed to support it.
+        \item Data and workflow modelling for customisations provided deep insights into field data capture and the infrastructure needed to support it.
     \end{itemize}
 \end{frame}
 
@@ -291,7 +358,7 @@ This work is licensed under a Creative Commons Attribution 4.0 International Lic
 \begin{frame}{Modularise by data lifecycle phase}
  \begin{figure}[H]
     \centering
-        \includegraphics[height=.75\textheight]{figures/FAIMS-federated.png}
+        \includegraphics[height=.75\textheight]{figures/FAIMS-federation.png}
         \caption{FAIMS Mobile federation strategy}
         \label{fig:figure13}
  \end{figure}
@@ -325,20 +392,20 @@ This work is licensed under a Creative Commons Attribution 4.0 International Lic
     \end{itemize}
 \end{frame}
 
-\section{From current practice to better practice}
+% \section{From current practice to better practice}
 
-\begin{frame}{Challenges and paths forward}
-  How do we get from where we are now to where we want to be?
-      \begin{itemize}[label=\textbullet]
-        \item Understand the evolving expectations of transparent research. 
-        \item Look past desktop software (Excel, ARCGIS, Filemaker, Access, etc.).
-        \item Rally around emerging research- and domain-specific solutions (even if imperfect).
-        \item Overcome `not invented here'; you don't need a bespoke solution.
-        \item Budget for `ground-up' transparency (data and code). Up-front costs will be high but offer longer-term payoffs (in costs, time, and quality).
-        \item Implement (and budget for) fundamental good practice in data and code management before other technologies.
-        \item Improve research design (prioritise approach over methods) \cite{Muthukrishna2019-kt, Hole1973-cy}
-    \end{itemize}
-\end{frame}
+% \begin{frame}{Challenges and paths forward}
+%  How do we get from where we are now to where we want to be?
+%      \begin{itemize}[label=\textbullet]
+%        \item Understand the evolving expectations of transparent research. 
+%        \item Look past desktop software (Excel, ARCGIS, Filemaker, Access, etc.).
+%         \item Rally around emerging research- and domain-specific solutions (even if imperfect).
+%         \item Overcome `not invented here'; you don't need a bespoke solution.
+%         \item Budget for `ground-up' transparency (data and code). Up-front costs will be high but offer longer-term payoffs (in costs, time, and quality).
+%         \item Implement (and budget for) fundamental good practice in data and code management before other technologies.
+%         \item Improve research design (prioritise approach over methods) \cite{Muthukrishna2019-kt, Hole1973-cy}
+%     \end{itemize}
+% \end{frame}
 
 % \bibliographystyle{apalike}
  
@@ -354,8 +421,9 @@ This work is licensed under a Creative Commons Attribution 4.0 International Lic
 % \end{frame}
 
 \begin{multicols}{2}[]
-\bibliography{references}
 \bibliographystyle{apalike}
+
+\bibliography{references}
 \end{multicols}
 
 \end{document}
