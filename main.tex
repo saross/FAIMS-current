@@ -55,17 +55,12 @@
 \setbeamerfont{bibliography item}{size=\tiny}
 
 %https://tex.stackexchange.com/q/333587/5483
-%TODO SHAWN REPLACE OSF URL
-%\setbeamertemplate{footline}{\strut~\texttt{https://osf.io/v5jp7/}\hfill\insertframenumber~/~\inserttotalframenumber\strut~~~}
 
-\title{Seven years of FAIMS Mobile} % Presentation title
-\author{Shawn A Ross | Brian Ballsun-Stanton}               % Presentation author
-\institute{Faculty of Arts}         % Author affiliation
-\date{\today}                 % Today's date  
+\title{FAIMS 3.0: Electronic Field Notebooks} % Presentation title
+\author{SA Ross, B Ballsun-Stanton, S Cassidy, P Crook, A Sobotkova, J Klump}   % Presentation author
+\institute{CAA Australasia Online Conference}   % Author affiliation
+\date{11 September 2020}    % Presentation date  
 
-
-
-%moved up from references.
 
 \begin{document}
 
@@ -75,7 +70,7 @@
 
 \maketitle
 
-  
+ 
 % \end{frame}
 
 % Outline
@@ -95,7 +90,7 @@
 
 % In-depth information for reference
 
-\section{`Small data' infrastructure across the data lifecycle}
+\section{Context: `Small data' infrastructure}
 
 \begin{frame}{`Small data' research}
  \begin{figure}[H]
@@ -138,9 +133,7 @@
 \end{frame}
 
 
-% Slides to speak to at WSU 5 June 2019
-
-\section{The FAIMS approach: summary}
+\section{FAIMS 2.0-2.6 (2014-2020)}
 
 \begin{frame}{Research Specific}
  \begin{figure}[H]
@@ -174,7 +167,7 @@
  \begin{figure}[H]
     \centering
         \includegraphics[width=.75\textwidth]{figures/GPLv3_Logo.eps}
-        \caption{FAIMS Mobile 'core' code is GPLv3; 'module' (customisation) code is also open; everything is on GitHub}
+        \caption{FAIMS Mobile `core' code is GPLv3; `module' (customisation) code is also open; everything is on GitHub}
         \label{fig:FAIMS-github-OSS}
  \end{figure}
 \end{frame}
@@ -195,24 +188,34 @@
         \item `Hooks’ for data interoperability, Open Linked Data approaches.
     \end{itemize}
 \end{frame}
-\begin{frame}{Selected FAIMS Testimonials}
-    \begin{itemize}[label=\textbullet]
-    \item ``The tablet app worked very well in the field and I would be keen to continue using it for subsequent sampling'' -- New Zealand Soil Geochemistry
-    \item ``Being able to check in on everyone's work from my computer so easily is... revolutionary. Thank you for building such an amazing tool! …  I look forward to providing more details, but I already feel like I have 100\%{} better control over data quality, even compared to last year'' -- Proyecto Arquelogico de Zana Colonial
+
+\begin{frame}{FAIMS by the numbers}
+ \begin{itemize}[label=\textbullet]
+        \item \textbf{63 field data capture workflows customised}.
+        \item \textbf{47 workflows confirmed deployed} to field at over \textbf{40 projects}.
+        \item \textbf{100s of users} logged \textbf{10,000s hours} on the platform.
+        \item Deployments took place in disciplines including \textbf{archaeology, geoscience, ecology, oral history, ecology, }and \textbf{linguistics}.
     \end{itemize}
 \end{frame}
-\begin{frame}{Selected FAIMS Testimonials 2}
-    \begin{itemize}[label=\textbullet]
-    \item ``The app has been such an incredible advantage in terms of workload, data quality, and a number of other data management issues with which archaeologists regularly have to deal. It readily links disparate data types that are otherwise stored separately – such as photographs, tabular logs, and context relationships.'' -- Malawi Early-Middle Stone Age Project
-    \item ``I was really impressed with the approach FAIMS project has taken to the challenge of creating field data apps which can be very expensive. Our module was ready for testing after just one briefing.'' -- Streamwatch
+
+\begin{frame}{Example deployments}
+ \begin{itemize}[label=\textbullet]
+        \item Indigenous Foodways in the Cape York Peninsula (UNE, archaeology)
+        \item Khirbet el-Rai Excavations, Israel (Macquarie, archaeology).
+        \item Landscape Archaeology at Lake Mungo (LTU, archaeology)
+        \item Excavation at the Boncuklu Höyük, Turkey (UQ, archaeology).
+        \item Tao River Archaeological Project, China (Harvard, archaeology).
+        \item Proyecto Arqueològico Zaña Colonial, Peru (Brown, archaeology).
+        \item The Malawi Earlier-Middle Stone Age Project (Yale, archaeology).
+        \item Avian Ecology in NSW (Macquarie, ecology)
+        \item The Greek-Australian Historical Archive (UNSW, oral history).
+        \item Key Pluridisciplinary Advances on African Multilingualism, Cameroon (SUNY Buffalo, linguistics).
+        \item Capricorn Distal Footprints Project (CSIRO, geological sampling).
+
     \end{itemize}
 \end{frame}
-\begin{frame}{Selected FAIMS Testimonials 3}
-    \begin{itemize}[label=\textbullet]
-\item 
-``We’re back from the field and I cannot believe how well everything went. ... [T]he combination of the mobile lab, the sample ID/tracking and FAIMS application enabled us to average 5-6 minutes per sample site (crust, soil, rock and two plants)  in the field and about half that in the lab... Using the old school notepad and GPS approach this would have been 15 mins at best and a whole lot of misplaced photos and details, not to mention the additional hours entering the data in at night. We were able to identify missed sites as we went and completed the soils map (280 sites) and infill (36 sites) and analysis all in the 7 days. '' -- CSIRO Mineral Resources
-\end{itemize}
-\end{frame}
+
+\section{FAIMS 3.0}
 
 \begin{frame}{Status and plans for the future}
     \begin{itemize}[label=\textbullet]
@@ -230,51 +233,31 @@
         \item Cross-platform support (Android; iOS; desktop)
         \item Self-customisation by the user via a GUI-based web application.
         \item Orchestrated deployment of infrastructure to (e.g.) Amazon Web Services.
-        \item Data 'round-trip' to external desktop or online software.
+        \item Data `round-trip' to external desktop or online software.
         \item Exposure of data via an API
         \item Improved scalability (application performance; synchronisation performance; server-to-server synchronisation)
         \item Improved user management and security
     \end{itemize}
 \end{frame}
 
-\begin{frame}{FAIMS publications}
-Available at: \url{https://paperpile.com/shared/yk95gS}
-
-      \begin{itemize}[label=\textbullet]
-      
-      
-      {\small
-      \nocite{Sobotkova2015-lq,Sobotkova2018-al,VanValkenburgh2018-hv,Ballsun-Stanton2018-zd,Sobotkova2016-mx,Ross2015-ph,Ross2013-hi}
-        % \item \nocite{Sobotkova2018-al}
-        % \item \nocite{Ballsun-Stanton2018-zd}
-        % \item \nocite{VanValkenburgh2018-hv}
-        % \item \nocite{sobotkova2016-mx}
-        % \item \nocite{Ross2015-ph} 
-        % \item \nocite{Sobotkova2015-lq}
-        % \item \nocite{Ross2013-hi}
-\item Ballsun-Stanton, Brian, Shawn A. Ross, Adela Sobotkova, and Penny Crook. 2018. ``FAIMS Mobile: Flexible, Open-Source Software for Field Research.''
-\item Ross, Shawn Adrian, Brian Ballsun-Stanton, Adela Sobotkova, and Penny Crook. 2015. ``Building the Bazaar: Enhancing Archaeological Field Recording Through an Open Source Approach.''
-\item Ross, Shawn Adrian, Adela Sobotkova, Brian Ballsun-Stanton, and Penny Crook. 2013. ``Creating Eresearch Tools For Archaeologists: The Federated Archaeological Information Management Systems Project.''
-\item Sobotkova, Adela. 2018. ``Sociotechnical Obstacles to Archaeological Data Reuse.'' 
-
-}
-    \end{itemize}
+\begin{frame}[allowframebreaks]{FAIMS publications}
+    \url{https://www.zotero.org/groups/2542876/faims-project/library}
+        \begin{itemize}[label=\textbullet]
+        \nocite{Ross2020-yg,Noble2019-qg,Ballsun-Stanton2018-zd,Sobotkova2018-al,VanValkenburgh2018-hv,Sobotkova2016-mx,Ross2015-ph,Sobotkova2015-lq,Ross2013-hi}
+            \item Ross, S. A., \& Ballsun-Stanton, B. (Accepted 02 April 2020). Introducing Preregistration of Research Design to Archaeology. In E. Watrall \& L. Goldstein (Eds.), Digital Heritage and Archaeology in Practice. University Press of Florida.
+            \item Noble, R., Gonzalez-Alvarez, I., Reid, N., Krapf, C., Pinchand, T., Fox, D., Ibrahimi, T., Cole, D., \& Lau, I. (2019). Coompana geochemistry - results from rapid surface characterization and a deep vertical profile. South Australia MESA Journal, 89, 4–14. http://hdl.handle.net/102.100.100/86035?index=1
+            \item Ballsun-Stanton, B., Ross, S. A., Sobotkova, A., \& Crook, P. (2018). FAIMS Mobile: Flexible, open-source software for field research. SoftwareX, 7C, 47–52. https://doi.org/10.1016/j.softx.2017.12.006
+            \item Sobotkova, A. (2018). Sociotechnical Obstacles to Archaeological Data Reuse. Advances in Archaeological Practice, 6(2), 117–124. https://doi.org/10.1017/aap.2017.37
+            \item VanValkenburgh, P., Silva, L. O. G., Repetti-Ludlow, C., Gardner, J., Crook, J., \& Ballsun-Stanton, B. (2018). Mobilization as Mediation: Implementing a Tablet-Based Recording System for Ceramic Classification. Advances in Archaeological Practice, 1–15. https://doi.org/10.1017/aap.2018.12
+            \item Sobotkova, A., Ross, S. A., Ballsun-Stanton, B., Fairbairn, A., Thompson, J., \& VanValkenburgh, P. (2016). Measure Twice, Cut Once: Cooperative Deployment of a Generalized, Archaeology-Specific Field Data Collection System. In E. W. Averett, J. M. Gordon, \& D. B. Counts (Eds.), Mobilizing the Past for a Digital Future: The Potential of Digital Archaeology (pp. 337–371). The Digital Press @ University of North Dakota. http://dc.uwm.edu/arthist\_mobilizingthepast/15 
+            \item Ross, S. A., Ballsun-Stanton, B., Sobotkova, A., \& Crook, P. (2015). Building the Bazaar: Enhancing Archaeological Field Recording Through an Open Source Approach. In A. T. Wilson \& B. Edwards (Eds.), Open Source Archaeology: Ethics and Practice (pp. 111–129). De Gruyter Open. https://doi.org/10.1515/9783110440171-009
+            \item Sobotkova, A., Ballsun-Stanton, B., Ross, S., \& Crook, P. (2015). Arbitrary Offline Data Capture on All of Your Androids: The FAIMS Mobile Platform. In A. Traviglia (Ed.), Across Space and Time. Papers from the 41st Annual Conference of Computer Applications and Quantitative Methods in Archaeology (CAA) (pp. 80–88). Amsterdam University Press.
+            \item Ross, S. A., Sobotkova, A., Ballsun-Stanton, B., \& Crook, P. (2013). Creating eresearch Tools For Archaeologists: The Federated Archaeological Information Management Systems Project. Australian Archaeology, 77(1), 107–119. https://doi.org/10.1080/03122417.2013.11681983
+        \end{itemize}
 \end{frame}
 
-\begin{frame}{FAIMS Publications 2}
-\begin{itemize}[label=\textbullet]
-{\small
-    \item Sobotkova, Adela, Brian Ballsun-Stanton, Shawn Ross, and Penny Crook. 2015. ``Arbitrary Offline Data Capture on All of Your Androids: The FAIMS Mobile Platform.''
-\item Sobotkova, Adela, Shawn A. Ross, Brian Ballsun-Stanton, Andrew Fairbairn, Jessica Thompson, and Parker VanValkenburgh. 2016. ``Measure Twice, Cut Once: Cooperative Deployment of a Generalized, Archaeology-Specific Field Data Collection System.'' 
-\item VanValkenburgh, Parker, Luiza O. G. Silva, Chiara Repetti-Ludlow, Jake Gardner, Jackson Crook, and Brian Ballsun-Stanton. 2018. ``Mobilization as Mediation: Implementing a Tablet-Based Recording System for Ceramic Classification.''} 
-\end{itemize}
-    
-\end{frame}
+
 \begin{frame}{Thank you!}
-
-%This presentation is available at:
-%\texttt{https://osf.io/v5jp7/}
-
 PDF and source code for this presentation is available at: 
 \texttt{https://github.com/saross/FAIMS-intro/releases/tag/v2.0}.
 
@@ -284,6 +267,25 @@ FAIMS Project software and documentation can be found at:
 This work is licensed under a Creative Commons Attribution 4.0 International License.
 
 \end{frame}
+
+
+\section{References}
+
+% Adding the option 'allowframebreaks' allows the contents of the slide to be expanded in more than one slide.
+% The "1" comes from the outer theme"
+
+% \begin{frame}[allowframebreaks]{References}
+  
+%   \bibliography{references}
+%   \bibliographystyle{apalike}
+% \end{frame}
+
+\begin{multicols}{2}[]
+\bibliographystyle{apalike}
+
+\bibliography{references}
+\end{multicols}
+
 
 % In-depth information for reference
 \section{The FAIMS approach: in-depth}
@@ -392,38 +394,17 @@ This work is licensed under a Creative Commons Attribution 4.0 International Lic
     \end{itemize}
 \end{frame}
 
-% \section{From current practice to better practice}
+\section{Reports from the field}
 
-% \begin{frame}{Challenges and paths forward}
-%  How do we get from where we are now to where we want to be?
-%      \begin{itemize}[label=\textbullet]
-%        \item Understand the evolving expectations of transparent research. 
-%        \item Look past desktop software (Excel, ARCGIS, Filemaker, Access, etc.).
-%         \item Rally around emerging research- and domain-specific solutions (even if imperfect).
-%         \item Overcome `not invented here'; you don't need a bespoke solution.
-%         \item Budget for `ground-up' transparency (data and code). Up-front costs will be high but offer longer-term payoffs (in costs, time, and quality).
-%         \item Implement (and budget for) fundamental good practice in data and code management before other technologies.
-%         \item Improve research design (prioritise approach over methods) \cite{Muthukrishna2019-kt, Hole1973-cy}
-%     \end{itemize}
-% \end{frame}
+\begin{frame}[allowframebreaks]{User feedback}
+    \begin{itemize}[label=\textbullet]
+        \item ``The tablet app worked very well in the field and I would be keen to continue using it for subsequent sampling'' -- New Zealand Soil Geochemistry
+        \item ``Being able to check in on everyone's work from my computer so easily is... revolutionary. Thank you for building such an amazing tool! …  I look forward to providing more details, but I already feel like I have 100\%{} better control over data quality, even compared to last year'' -- Proyecto Arquelogico de Zana Colonial
+        \item ``The app has been such an incredible advantage in terms of workload, data quality, and a number of other data management issues with which archaeologists regularly have to deal. It readily links disparate data types that are otherwise stored separately – such as photographs, tabular logs, and context relationships.'' -- Malawi Early-Middle Stone Age Project
+        \item ``I was really impressed with the approach FAIMS project has taken to the challenge of creating field data apps which can be very expensive. Our module was ready for testing after just one briefing.'' -- Streamwatch
+        \item ``We’re back from the field and I cannot believe how well everything went. ... [T]he combination of the mobile lab, the sample ID/tracking and FAIMS application enabled us to average 5-6 minutes per sample site (crust, soil, rock and two plants)  in the field and about half that in the lab... Using the old school notepad and GPS approach this would have been 15 mins at best and a whole lot of misplaced photos and details, not to mention the additional hours entering the data in at night. We were able to identify missed sites as we went and completed the soils map (280 sites) and infill (36 sites) and analysis all in the 7 days. '' -- CSIRO Mineral Resources
+    \end{itemize}
+\end{frame}
 
-% \bibliographystyle{apalike}
- 
-% Adding the option 'allowframebreaks' allows the contents of the slide to be expanded in more than one slide.
-% The "1" comes from the outer theme"
-
-\section{References}
-
-% \begin{frame}[allowframebreaks]{References}
-  
-%   \bibliography{references}
-%   \bibliographystyle{apalike}
-% \end{frame}
-
-\begin{multicols}{2}[]
-\bibliographystyle{apalike}
-
-\bibliography{references}
-\end{multicols}
 
 \end{document}
