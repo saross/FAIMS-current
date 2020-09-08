@@ -152,20 +152,23 @@ Fieldwork is time consuming and researchers are always looking at ways to increa
  \end{figure}
 \end{frame}
 
-\begin{frame}{Key research-specific FAIMS Mobile features}
+\begin{frame}[allowframebreaks]{Key research-specific features}
     \begin{itemize}[label=\textbullet]
-        \item Fundamentally customisable (interpreter + definition files).
-        \item Tightly binds structured, geospatial, multimedia, and free text data.
-        \item Works offline.
-        \item Automated bi-directional synchronisation using local or online server
-        \item Record history: append-only datastore, versioning, rollback.
-        \item Mobile GIS.
-        \item Connects to internal and external sensors, Bluetooth / USB devices.
-        \item Multilingual.
-        \item Granular help.
-        \item Granular metadata / uncertainty.
-        \item Generalised export.
-        \item `Hooks’ for data interoperability, Open Linked Data approaches.
+        \item Workflows and data schemata are deeply customisable.
+        \item Customisation is achieved using relatively simple and human-readable XML documents separate from the ‘core’ software, supporting sharing, modification, and reuse via collaborative software development platforms like GitHub.
+        \item Resulting mobile applications work offline.
+        \item Automated bi-directional synchronisation using local or online server.
+        \item A complete version history, with review and selective rollback, is provided for all data.
+        \item Binds structured, geospatial, multimedia, and free text data in one record.
+        \item A mobile GIS provides layer management and tools for the creation and editing of shapes.
+        \item Connects to internal and external sensors (e.g., Bluetooth / USB devices).
+        \item Externally captured multimedia (e.g., dSLR photos, audio recordings) can be connected to a record, then data contained in the associated record can be used to automatically rename connected multimedia files or write file metadata.
+        \item Data validated on device and/or on server.
+        \item Applications can be made multilingual using a standard and well-established localisation approach..
+        \item Granular and contextualised metadata and certainty.
+        \item Granular and contextualised help, including images, can be provided for all data entry fields.
+        \item All data entry fields can be mapped to shared vocabularies, thesauri, or ontologies via embedded URIs, supporting Linked Open Data approaches.
+        \item Data can be exported from the server in a variety of formats, or can be customised to a specific data target (e.g., JSON, relational database).
     \end{itemize}
 \end{frame}
 
@@ -191,7 +194,7 @@ Fieldwork is time consuming and researchers are always looking at ways to increa
  \begin{figure}[H]
     \centering
         \includegraphics[width=.75\textwidth]{figures/GPLv3_Logo.eps}
-        \caption{FAIMS Mobile `core' code is GPLv3; `module' (customisation) code is also open; everything is on GitHub}
+        \caption{FAIMS Mobile `core' code is GPLv3; definition files are openly licensed; everything is on GitHub}
         \label{fig:FAIMS-github-OSS}
  \end{figure}
 \end{frame}
@@ -225,35 +228,50 @@ Fieldwork is time consuming and researchers are always looking at ways to increa
 
 \section{FAIMS 3.0}
 
-\begin{frame}{Status and plans for the future}
+\begin{frame}{Status of the project}
     \begin{itemize}[label=\textbullet]
         \item FAIMS v2.6 is nearing end of its useful life.
-        \item A high-level technical plan for FAIMS v3.0 won a US design prize in 2017 \cite{Bureau_of_Reclamation2017-xl}.
-        \item Any future iteration of FAIMS must be sustainable via commercialisation as a (primarily) self-service platform.
         \item The FAIMS team did CSIRO ON Prime in 2016, completing 70+ interviews with clients / potential clients.
-        \item We are considering applying for an ARDC Platforms and Services grant, if we can reconcile that with commercialisation.
-        \item Challenge: balancing open research / OSS with commercialisation.
+        \item A high-level technical plan for FAIMS v3.0 won a US design prize in 2017 \cite{Bureau_of_Reclamation2017-xl}.
+        \item ARDC Platforms grant awarded in late 2019 to rebuild FAIMS using modern components.
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Technical improvements}
+\begin{frame}{Challenges}
     \begin{itemize}[label=\textbullet]
-        \item Cross-platform support (Android; iOS; desktop)
-        \item Self-customisation by the user via a GUI-based web application.
-        \item Orchestrated deployment of infrastructure to (e.g.) Amazon Web Services.
-        \item Data `round-trip' to external desktop or online software.
-        \item Exposure of data via an API
-        \item Improved scalability (application performance; synchronisation performance; server-to-server synchronisation)
-        \item Improved user management and security
+        \item Research-specific features of FAIMS v2.6 retained.
+        \item Android-only hindered uptake; cross-platform support required.
+        \item Lack of self-service customisation / deployment hindered uptake.
+        \item Users want to be able to edit data on the desktop or online, then have that data available for further editing in the field (data `round-trip).
+        \item Users want more options for accessing / exporting data on-demand.
+        \item Users want to be able to use the platform for sensitive data. 
+        \item Improved scalability needed (application performance; server-to-server synchronisation)
+        \item Enterprise features (orchestration, user management, reporting, branding, SSO, etc.) needed for eventual COSS product to support sustainability.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Approaches under consideration}
+Technical elaboration has now begun (September 2020); technology candidates include:
+    \begin{itemize}[label=\textbullet]
+        \item Cross-platform frameworks (e.g., Flutter, Cordova)
+        \item NoSQL datastores (e.g., Apache CouchDB / PouchDB).
+        \item Javascript map tilers (e.g., Leaflet).
+        \item Definition files in JSON rather than XML.
+        \item API development. 
+        \item Web application to provide GUI to produce definition files.
+        \item 'Real' user management and security.
     \end{itemize}
 \end{frame}
 
 \begin{frame}{Thank you!}
 PDF and source code for this presentation is available at: 
-\texttt{https://github.com/saross/FAIMS-intro/releases/tag/v2.0}.
+\texttt{https://github.com/saross/FAIMS-intro/releases/tag/v3.0}.
+
+FAIMS 3.0 project website: \texttt{https://osf.io/mqk45/}.
 
 FAIMS Project software and documentation can be found at:
 \texttt{https://github.com/faims}.
+
 
 This work is licensed under a Creative Commons Attribution 4.0 International License.
 
