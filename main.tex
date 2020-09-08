@@ -44,8 +44,9 @@
 \usepackage{booktabs}         % For table rules
 \usepackage{hyperref}         % For cross-referencing
 
-
 \usepackage{enumitem} % https://tex.stackexchange.com/a/2292/5483
+
+\usepackage{comment}
 
 %https://tex.stackexchange.com/a/371844/5483
 \setbeamerfont{bibliography entry author}{size=\tiny}
@@ -61,6 +62,12 @@
 \institute{CAA Australasia Online Conference}   % Author affiliation
 \date{11 September 2020}    % Presentation date  
 
+\begin{comment}
+Delivered online for Session 3: Data Management at CAA Australasia 2020 on 11 September 2020
+
+Abstract
+Fieldwork is time consuming and researchers are always looking at ways to increase efficiency in data recording in the field, while also improving our ability to share reusable data following international good practices like the Transparency and Openness Principles (TOP) and Findable, Accessible, Interoperable, and Reusable (FAIR) data principles. Achieving these goals is easier when data is born digital, but commercial software is not optimised for research and bespoke software is expensive to build and onerous to maintain. The Australian Research Data Commons (ARDC) recently awarded the Field Acquired Information Management Systems (FAIMS) Project, based at Macquarie University, a large, three-year grant to renew our existing platform, FAIMS Mobile, which has been customised and deployed at more than 60 workflows on 40 projects worldwide but is reaching end-of-life. FAIMS Electronic Field Notebooks will produce and manage mobile apps for a range of disciplines including not only archaeology, but earth sciences, ecology, and oral history, ensuring data is captured consistently and is well documented. The platform will use modern web technologies and integrate with existing analysis environments to provide a seamless workflow. FAIMS Electronic Field Notebooks will accommodate diverse data capture, localisation and complex workflows, and provide seamless synchronisation, backup and version control, just like FAIMS Mobile. It will also be cross-platform (Android, iOS and Desktop) and self-service allowing uses to customise and deploy modules through a graphic user interface. This presentation will introduce the next generation of FAIMS, and how it can contribute to open research in archaeology.
+\end{comment}
 
 \begin{document}
 
@@ -72,6 +79,7 @@
 
  
 % \end{frame}
+
 
 % Outline
 % This page includes the outline (Table of content) of the presentation. All sections and subsections will appear in the outline by default.
@@ -90,7 +98,7 @@
 
 % In-depth information for reference
 
-\section{Context: `Small data' infrastructure}
+\section{`Small data' infrastructure}
 
 \begin{frame}{`Small data' research}
  \begin{figure}[H]
@@ -133,7 +141,7 @@
 \end{frame}
 
 
-\section{FAIMS 2.0-2.6 (2014-2020)}
+\section{Eight years of FAIMS Mobile}
 
 \begin{frame}{Research Specific}
  \begin{figure}[H]
@@ -144,6 +152,22 @@
  \end{figure}
 \end{frame}
 
+\begin{frame}{Key research-specific FAIMS Mobile features}
+    \begin{itemize}[label=\textbullet]
+        \item Fundamentally customisable (interpreter + definition files).
+        \item Tightly binds structured, geospatial, multimedia, and free text data.
+        \item Works offline.
+        \item Automated bi-directional synchronisation using local or online server
+        \item Record history: append-only datastore, versioning, rollback.
+        \item Mobile GIS.
+        \item Connects to internal and external sensors, Bluetooth / USB devices.
+        \item Multilingual.
+        \item Granular help.
+        \item Granular metadata / uncertainty.
+        \item Generalised export.
+        \item `Hooks’ for data interoperability, Open Linked Data approaches.
+    \end{itemize}
+\end{frame}
 
 \begin{frame}{Generalised}
  \begin{figure}[H]
@@ -172,22 +196,6 @@
  \end{figure}
 \end{frame}
 
-\begin{frame}{Key research-specific FAIMS Mobile features}
-    \begin{itemize}[label=\textbullet]
-        \item Fundamentally customisable (interpreter + definition files).
-        \item Tightly binds structured, geospatial, multimedia, and free text data.
-        \item Works offline.
-        \item Automated bi-directional synchronisation using local or online server
-        \item Record history: append-only datastore, versioning, rollback.
-        \item Mobile GIS.
-        \item Connects to internal and external sensors, Bluetooth / USB devices.
-        \item Multilingual.
-        \item Granular help.
-        \item Granular metadata / uncertainty.
-        \item Generalised export.
-        \item `Hooks’ for data interoperability, Open Linked Data approaches.
-    \end{itemize}
-\end{frame}
 
 \begin{frame}{FAIMS by the numbers}
  \begin{itemize}[label=\textbullet]
@@ -240,23 +248,6 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}[allowframebreaks]{FAIMS publications}
-    \url{https://www.zotero.org/groups/2542876/faims-project/library}
-        \begin{itemize}[label=\textbullet]
-        \nocite{Ross2020-yg,Noble2019-qg,Ballsun-Stanton2018-zd,Sobotkova2018-al,VanValkenburgh2018-hv,Sobotkova2016-mx,Ross2015-ph,Sobotkova2015-lq,Ross2013-hi}
-            \item Ross, S. A., \& Ballsun-Stanton, B. (Accepted 02 April 2020). Introducing Preregistration of Research Design to Archaeology. In E. Watrall \& L. Goldstein (Eds.), Digital Heritage and Archaeology in Practice. University Press of Florida.
-            \item Noble, R., Gonzalez-Alvarez, I., Reid, N., Krapf, C., Pinchand, T., Fox, D., Ibrahimi, T., Cole, D., \& Lau, I. (2019). Coompana geochemistry - results from rapid surface characterization and a deep vertical profile. South Australia MESA Journal, 89, 4–14. http://hdl.handle.net/102.100.100/86035?index=1
-            \item Ballsun-Stanton, B., Ross, S. A., Sobotkova, A., \& Crook, P. (2018). FAIMS Mobile: Flexible, open-source software for field research. SoftwareX, 7C, 47–52. https://doi.org/10.1016/j.softx.2017.12.006
-            \item Sobotkova, A. (2018). Sociotechnical Obstacles to Archaeological Data Reuse. Advances in Archaeological Practice, 6(2), 117–124. https://doi.org/10.1017/aap.2017.37
-            \item VanValkenburgh, P., Silva, L. O. G., Repetti-Ludlow, C., Gardner, J., Crook, J., \& Ballsun-Stanton, B. (2018). Mobilization as Mediation: Implementing a Tablet-Based Recording System for Ceramic Classification. Advances in Archaeological Practice, 1–15. https://doi.org/10.1017/aap.2018.12
-            \item Sobotkova, A., Ross, S. A., Ballsun-Stanton, B., Fairbairn, A., Thompson, J., \& VanValkenburgh, P. (2016). Measure Twice, Cut Once: Cooperative Deployment of a Generalized, Archaeology-Specific Field Data Collection System. In E. W. Averett, J. M. Gordon, \& D. B. Counts (Eds.), Mobilizing the Past for a Digital Future: The Potential of Digital Archaeology (pp. 337–371). The Digital Press @ University of North Dakota. http://dc.uwm.edu/arthist\_mobilizingthepast/15 
-            \item Ross, S. A., Ballsun-Stanton, B., Sobotkova, A., \& Crook, P. (2015). Building the Bazaar: Enhancing Archaeological Field Recording Through an Open Source Approach. In A. T. Wilson \& B. Edwards (Eds.), Open Source Archaeology: Ethics and Practice (pp. 111–129). De Gruyter Open. https://doi.org/10.1515/9783110440171-009
-            \item Sobotkova, A., Ballsun-Stanton, B., Ross, S., \& Crook, P. (2015). Arbitrary Offline Data Capture on All of Your Androids: The FAIMS Mobile Platform. In A. Traviglia (Ed.), Across Space and Time. Papers from the 41st Annual Conference of Computer Applications and Quantitative Methods in Archaeology (CAA) (pp. 80–88). Amsterdam University Press.
-            \item Ross, S. A., Sobotkova, A., Ballsun-Stanton, B., \& Crook, P. (2013). Creating eresearch Tools For Archaeologists: The Federated Archaeological Information Management Systems Project. Australian Archaeology, 77(1), 107–119. https://doi.org/10.1080/03122417.2013.11681983
-        \end{itemize}
-\end{frame}
-
-
 \begin{frame}{Thank you!}
 PDF and source code for this presentation is available at: 
 \texttt{https://github.com/saross/FAIMS-intro/releases/tag/v2.0}.
@@ -288,7 +279,7 @@ This work is licensed under a Creative Commons Attribution 4.0 International Lic
 
 
 % In-depth information for reference
-\section{The FAIMS approach: in-depth}
+\section{Extras: The FAIMS approach in-depth}
 
 \begin{frame}{Introduction to the FAIMS Project}
     \begin{itemize}[label=\textbullet]
@@ -394,7 +385,7 @@ This work is licensed under a Creative Commons Attribution 4.0 International Lic
     \end{itemize}
 \end{frame}
 
-\section{Reports from the field}
+\section{Extras: Reports from the field}
 
 \begin{frame}[allowframebreaks]{User feedback}
     \begin{itemize}[label=\textbullet]
@@ -404,6 +395,33 @@ This work is licensed under a Creative Commons Attribution 4.0 International Lic
         \item ``I was really impressed with the approach FAIMS project has taken to the challenge of creating field data apps which can be very expensive. Our module was ready for testing after just one briefing.'' -- Streamwatch
         \item ``We’re back from the field and I cannot believe how well everything went. ... [T]he combination of the mobile lab, the sample ID/tracking and FAIMS application enabled us to average 5-6 minutes per sample site (crust, soil, rock and two plants)  in the field and about half that in the lab... Using the old school notepad and GPS approach this would have been 15 mins at best and a whole lot of misplaced photos and details, not to mention the additional hours entering the data in at night. We were able to identify missed sites as we went and completed the soils map (280 sites) and infill (36 sites) and analysis all in the 7 days. '' -- CSIRO Mineral Resources
     \end{itemize}
+\end{frame}
+
+\section{Extras: FAIMS publications}
+
+\begin{frame}[allowframebreaks]{FAIMS publications}
+\small{ \url{https://www.zotero.org/groups/2542876/faims-project/library}
+
+        \nocite{Ross2020-yg,Noble2019-qg,Ballsun-Stanton2018-zd,Sobotkova2018-al,VanValkenburgh2018-hv,Sobotkova2016-mx,Ross2015-ph,Sobotkova2015-lq,Ross2013-hi}
+        
+        Ross, S. A., \& Ballsun-Stanton, B. (Accepted 02 April 2020). Introducing Preregistration of Research Design to Archaeology. In E. Watrall \& L. Goldstein (Eds.), Digital Heritage and Archaeology in Practice. University Press of Florida.
+        
+        Noble, R., Gonzalez-Alvarez, I., Reid, N., Krapf, C., Pinchand, T., Fox, D., Ibrahimi, T., Cole, D., \& Lau, I. (2019). Coompana geochemistry - results from rapid surface characterization and a deep vertical profile. South Australia MESA Journal, 89, 4–14. http://hdl.handle.net/102.100.100/86035?index=1
+        
+        Ballsun-Stanton, B., Ross, S. A., Sobotkova, A., \& Crook, P. (2018). FAIMS Mobile: Flexible, open-source software for field research. SoftwareX, 7C, 47–52. https://doi.org/10.1016/j.softx.2017.12.006
+        
+        Sobotkova, A. (2018). Sociotechnical Obstacles to Archaeological Data Reuse. Advances in Archaeological Practice, 6(2), 117–124. https://doi.org/10.1017/aap.2017.37
+        
+        VanValkenburgh, P., Silva, L. O. G., Repetti-Ludlow, C., Gardner, J., Crook, J., \& Ballsun-Stanton, B. (2018). Mobilization as Mediation: Implementing a Tablet-Based Recording System for Ceramic Classification. Advances in Archaeological Practice, 1–15. https://doi.org/10.1017/aap.2018.12
+        
+        Sobotkova, A., Ross, S. A., Ballsun-Stanton, B., Fairbairn, A., Thompson, J., \& VanValkenburgh, P. (2016). Measure Twice, Cut Once: Cooperative Deployment of a Generalized, Archaeology-Specific Field Data Collection System. In E. W. Averett, J. M. Gordon, \& D. B. Counts (Eds.), Mobilizing the Past for a Digital Future: The Potential of Digital Archaeology (pp. 337–371). The Digital Press @ University of North Dakota. http://dc.uwm.edu/arthist\_mobilizingthepast/15 
+        
+        Ross, S. A., Ballsun-Stanton, B., Sobotkova, A., \& Crook, P. (2015). Building the Bazaar: Enhancing Archaeological Field Recording Through an Open Source Approach. In A. T. Wilson \& B. Edwards (Eds.), Open Source Archaeology: Ethics and Practice (pp. 111–129). De Gruyter Open. https://doi.org/10.1515/9783110440171-009
+        
+        Sobotkova, A., Ballsun-Stanton, B., Ross, S., \& Crook, P. (2015). Arbitrary Offline Data Capture on All of Your Androids: The FAIMS Mobile Platform. In A. Traviglia (Ed.), Across Space and Time. Papers from the 41st Annual Conference of Computer Applications and Quantitative Methods in Archaeology (CAA) (pp. 80–88). Amsterdam University Press.
+        
+        Ross, S. A., Sobotkova, A., Ballsun-Stanton, B., \& Crook, P. (2013). Creating eresearch Tools For Archaeologists: The Federated Archaeological Information Management Systems Project. Australian Archaeology, 77(1), 107–119. https://doi.org/10.1080/03122417.2013.11681983
+        }
 \end{frame}
 
 
