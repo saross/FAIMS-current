@@ -109,18 +109,35 @@ Fieldwork is time consuming and researchers are always looking at ways to increa
  \end{figure}
 \end{frame}
 
+% \begin{frame}{Context: the challenge of `small data'}
+%     `Long tail' research: most field data is small data \cite{Borgman2015-rh}
+%     \begin{itemize}[label=\textbullet]
+%         \item Smaller scale; smaller communities; local control.
+%         \item Diverse questions, approaches, and methods.
+%         \item Heterogeneous data; variety of content, structure.
+%         \item Data and infrastructure emerge from fieldwork. 
+%         \item Relative lack of standards.
+%         \item Limited infrastructure and funding.
+%         \item Challenges associated with big(ger) data from photogrammetry, SfM, video, geophysics, etc., will exacerbate these problems.
+%     \end{itemize}
+% \end{frame}
+
+% Brian's suggestion
 \begin{frame}{Context: the challenge of `small data'}
     `Long tail' research: most field data is small data \cite{Borgman2015-rh}
     \begin{itemize}[label=\textbullet]
-        \item Smaller scale; smaller communities; local control.
-        \item Diverse questions, approaches, and methods.
-        \item Heterogeneous data; variety of content, structure.
+        \item Smaller scale
+        \item Diverse approaches
+        \item Heterogeneous data
         \item Data and infrastructure emerge from fieldwork. 
         \item Relative lack of standards.
-        \item Limited infrastructure and funding.
-        \item Challenges associated with big(ger) data from photogrammetry, SfM, video, geophysics, etc., will exacerbate these problems.
+        \item Limited funding.
+        \item Large(r) new data streams make everything worse.
+        % \item Challenges associated with big(ger) data from photogrammetry, SfM, video, geophysics, etc., will exacerbate these problems.
     \end{itemize}
 \end{frame}
+
+
 
 \begin{frame}{The data lifecycle}
  \begin{figure}[H]
@@ -131,12 +148,22 @@ Fieldwork is time consuming and researchers are always looking at ways to increa
  \end{figure}
 \end{frame}
 
+% \begin{frame}{Infrastructure across the data lifecycle}
+%     Consider the infrastructure needed to manage the three main phases of the data lifecycle
+%     \begin{itemize}[label=\textbullet]
+%         \item Publication (most mature): domain-specific repositories.
+%         \item Processing and analysis (less mature): project-level code \cite{Stewart_Lowndes2017-lj}, then Virtual Labs / Science Gateways, \cite{Alveo2019-tk}.
+%         \item Capture (least mature): most varied, needs to work offline under difficult conditions. Existing commercial solutions insufficient \cite{Bureau_of_Reclamation2017-xl}.
+%     \end{itemize}
+% \end{frame}
+
+
 \begin{frame}{Infrastructure across the data lifecycle}
-    Consider the infrastructure needed to manage the three main phases of the data lifecycle
+    Three main phases of the data lifecycle
     \begin{itemize}[label=\textbullet]
-        \item Publication (most mature): domain-specific repositories.
-        \item Processing and analysis (less mature): project-level code \cite{Stewart_Lowndes2017-lj}, then Virtual Labs / Science Gateways, \cite{Alveo2019-tk}.
-        \item Capture (least mature): most varied, needs to work offline under difficult conditions. Existing commercial solutions insufficient \cite{Bureau_of_Reclamation2017-xl}.
+        \item Publication (most mature)
+        \item Processing and analysis (less mature ) \cite{Stewart_Lowndes2017-lj} \cite{Alveo2019-tk}.
+        \item Capture (least mature and least supported by `normal' tools) \cite{Bureau_of_Reclamation2017-xl}.
     \end{itemize}
 \end{frame}
 
@@ -152,24 +179,27 @@ Fieldwork is time consuming and researchers are always looking at ways to increa
  \end{figure}
 \end{frame}
 
-\begin{frame}[allowframebreaks]{Key research-specific features}
-    \begin{itemize}[label=\textbullet]
-        \item Workflows and data schemata are deeply customisable.
-        \item Customisation is achieved using relatively simple and human-readable XML documents separate from the ‘core’ software, supporting sharing, modification, and reuse via collaborative software development platforms like GitHub.
-        \item Resulting mobile applications work offline.
-        \item Automated bi-directional synchronisation using local or online server.
-        \item A complete version history, with review and selective rollback, is provided for all data.
-        \item Binds structured, geospatial, multimedia, and free text data in one record.
-        \item A mobile GIS provides layer management and tools for the creation and editing of shapes.
-        \item Connects to internal and external sensors (e.g., Bluetooth / USB devices).
-        \item Externally captured multimedia (e.g., dSLR photos, audio recordings) can be connected to a record, then data contained in the associated record can be used to automatically rename connected multimedia files or write file metadata.
-        \item Data validated on device and/or on server.
-        \item Applications can be made multilingual using a standard and well-established localisation approach..
-        \item Granular and contextualised metadata and certainty.
-        \item Granular and contextualised help, including images, can be provided for all data entry fields.
-        \item All data entry fields can be mapped to shared vocabularies, thesauri, or ontologies via embedded URIs, supporting Linked Open Data approaches.
-        \item Data can be exported from the server in a variety of formats, or can be customised to a specific data target (e.g., JSON, relational database).
+
+%\begin{frame}[allowframebreaks]{Key research-specific features}
+\begin{frame}{Key research-specific features}
+\begin{multicols}{2}
+\begin{itemize}[label=\textbullet]
+        \item Customisable workflows.
+        \item Offline capable.
+        \item Complete data provenance / version history.
+        \item Binds text, structured, geospatial, multimedia data.
+        \item Mobile GIS with layers, raster and vector display, shape creation.
+        \item Uses device and external sensors. 
+        \item Multimedia file and metadata management.
+        \item Validation and automation on device or server.
+        \item Multilingual user-interface.
+        \item Granular metadata: Notes and certainty for each field.
+        \item Contextual help with images.
+        \item Structured data can implement vocabularies / ontologies, LOD approaches.
+        \item Data can be exported in a variety of formats, including custom exports.
     \end{itemize}
+\end{multicols}
+    
 \end{frame}
 
 \begin{frame}{Generalised}
@@ -228,7 +258,7 @@ Fieldwork is time consuming and researchers are always looking at ways to increa
 
 \section{FAIMS 3.0}
 
-\begin{frame}{Status of the project}
+\begin{frame}{Where are we now?}
     \begin{itemize}[label=\textbullet]
         \item FAIMS v2.6 is nearing end of its useful life.
         \item The FAIMS team did CSIRO ON Prime in 2016, completing 70+ interviews with clients / potential clients.
@@ -237,16 +267,16 @@ Fieldwork is time consuming and researchers are always looking at ways to increa
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Challenges}
+\begin{frame}{Opportunities and challenges}
     \begin{itemize}[label=\textbullet]
-        \item Research-specific features of FAIMS v2.6 retained.
+        \item Useful research-specific features of FAIMS v2.6 to be retained.
         \item Android-only hindered uptake; cross-platform support required.
         \item Lack of self-service customisation / deployment hindered uptake.
-        \item Users want to be able to edit data on the desktop or online, then have that data available for further editing in the field (data `round-trip).
+        \item Users want to be able to edit data on the desktop or online, then have that data available for further editing in the field (data `round-trip' outside of the application).
         \item Users want more options for accessing / exporting data on-demand.
         \item Users want to be able to use the platform for sensitive data. 
         \item Improved scalability needed (application performance; server-to-server synchronisation)
-        \item Enterprise features (orchestration, user management, reporting, branding, SSO, etc.) needed for eventual COSS product to support sustainability.
+        \item Enterprise features (orchestration, user management, reporting, branding, SSO, etc.) needed for eventual COSS \textbf{product} to support sustainability (underlying software \textbf{project} will remain OS).
     \end{itemize}
 \end{frame}
 
@@ -270,7 +300,7 @@ PDF and source code for this presentation is available at:
 
 FAIMS 3.0 project website: \texttt{https://osf.io/mqk45/}.
 
-FAIMS Project software and documentation can be found at:
+FAIMS Project software, customisation library, and documentation can be found at:
 \texttt{https://github.com/faims}.
 
 
@@ -297,7 +327,30 @@ This work is licensed under a Creative Commons Attribution 4.0 International Lic
 \end{multicols}
 
 
-% In-depth information for reference
+% In-depth information or additional details for reference
+
+\section{Extras: FAIMS research-specific features}
+
+\begin{frame}[allowframebreaks]{Key research-specific features}
+    \begin{itemize}[label=\textbullet]
+        \item Workflows and data schemata are deeply customisable.
+        \item Customisation is achieved using relatively simple and human-readable XML documents separate from the ‘core’ software, supporting sharing, modification, and reuse via collaborative software development platforms like GitHub.
+        \item Resulting mobile applications work offline.
+        \item Automated bi-directional synchronisation using local or online server.
+        \item A complete version history, with review and selective rollback, is provided for all data.
+        \item Binds structured, geospatial, multimedia, and free text data in one record.
+        \item A mobile GIS provides layer management and tools for the creation and editing of shapes.
+        \item Connects to internal and external sensors (e.g., Bluetooth / USB devices).
+        \item Externally captured multimedia (e.g., dSLR photos, audio recordings) can be connected to a record, then data contained in the associated record can be used to automatically rename connected multimedia files or write file metadata.
+        \item Data validated on device and/or on server.
+        \item Applications can be made multilingual using a standard and well-established localisation approach..
+        \item Granular and contextualised metadata and certainty.
+        \item Granular and contextualised help, including images, can be provided for all data entry fields.
+        \item All data entry fields can be mapped to shared vocabularies, thesauri, or ontologies via embedded URIs, supporting Linked Open Data approaches.
+        \item Data can be exported from the server in a variety of formats, or can be customised to a specific data target (e.g., JSON, relational database).
+    \end{itemize}
+\end{frame}
+
 \section{Extras: The FAIMS approach in-depth}
 
 \begin{frame}{Introduction to the FAIMS Project}
