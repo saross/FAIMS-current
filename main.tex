@@ -58,9 +58,9 @@
 %https://tex.stackexchange.com/q/333587/5483
 
 \title{FAIMS 3.0: Electronic Field Notebooks} % Presentation title
-\author{SA Ross, B Ballsun-Stanton, S Cassidy, P Crook, A Sobotkova, J Klump}   % Presentation author
-\institute{CAA Australasia Online Conference}   % Author affiliation
-\date{11 September 2020}    % Presentation date  
+\author{P Crook, S Ross, B Ballsun-Stanton, S Cassidy, A Sobotkova, J Klump}   % Presentation author
+\institute{Australian Astronomical Optics seminar}   % Author affiliation
+\date{19 August 2021}    % Presentation date  
 
 
 \begin{document}
@@ -126,7 +126,7 @@
         \item Data and infrastructure emerge from fieldwork. 
         \item Relative lack of standards.
         \item Limited funding.
-        \item Large(r) new data streams make everything worse.
+        \item Large(r) new data streams make everything harder.
         % \item Challenges associated with big(ger) data from photogrammetry, SfM, video, geophysics, etc., will exacerbate these problems.
     \end{itemize}
 \end{frame}
@@ -152,7 +152,7 @@
 \end{frame}
 
 
-\section{Eight years of FAIMS Mobile}
+\section{Nine years of FAIMS Mobile}
 
 \begin{frame}{Research Specific}
  \begin{figure}[H]
@@ -207,8 +207,8 @@
 \begin{frame}{Open Source}
  \begin{figure}[H]
     \centering
-        \includegraphics[width=.75\textwidth]{figures/GPLv3_Logo.eps}
-        \caption{FAIMS Mobile `core' code is GPLv3; definition files are openly licensed; everything is on GitHub}
+        \includegraphics[width=.75\textwidth]{figures/asf_logo_url.png}
+        \caption{FAIMS Mobile v0.1-2.6 `core' code is licensed GPLv3; FAIMS 3.0 is licensed Apache 2.0; definition files are openly licensed (CC-BY); everything is on GitHub}
         \label{fig:FAIMS-github-OSS}
  \end{figure}
 \end{frame}
@@ -216,8 +216,8 @@
 
 \begin{frame}{FAIMS by the numbers}
  \begin{itemize}[label=\textbullet]
-        \item \textbf{63 field data capture workflows customised}.
-        \item \textbf{47 workflows confirmed deployed} to field at over \textbf{40 projects}.
+        \item \textbf{64 field data capture workflows customised}.
+        \item \textbf{48 workflows confirmed deployed} to field at over \textbf{40 projects}.
         \item \textbf{100s of users} logged \textbf{10,000s hours} on the platform.
         \item Deployments took place in disciplines including \textbf{archaeology, geoscience, ecology, oral history, ecology, }and \textbf{linguistics}.
     \end{itemize}
@@ -247,7 +247,7 @@
         \item FAIMS v2.6 is nearing end of its useful life.
         \item The FAIMS team did CSIRO ON Prime in 2016, completing 70+ interviews with clients / potential clients.
         \item A high-level technical plan for FAIMS v3.0 won a US design prize in 2017 \cite{Bureau_of_Reclamation2017-xl}.
-        \item ARDC Platforms grant awarded in late 2019 to rebuild FAIMS using modern components.
+        \item ARDC Platforms announced a major co-investment in late 2019 to rebuild FAIMS using modern components.
     \end{itemize}
 \end{frame}
 
@@ -264,19 +264,50 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Approaches under consideration}
-Technical elaboration has now begun (September 2020); technology candidates include:
+\begin{frame}{FAIMS 3.0 development approach}
+Technical elaboration in 2020 produced an \href{https://zenodo.org/record/4616766}{Elaboration Report}; our approach includes:
     \begin{itemize}[label=\textbullet]
-        \item Cross-platform frameworks (e.g., Flutter, Cordova)
-        \item NoSQL datastores (e.g., Apache CouchDB / PouchDB).
-        \item Javascript map tilers (e.g., Leaflet).
-        \item Definition files in JSON rather than XML.
-        \item API development. 
-        \item Web application to provide GUI to produce definition files.
-        \item 'Real' user management and security.
-        \item Interoperability with Cloudstor, VLs / Gateways, domain repositories.
+        \item NODE.JS
+        \item NoSQL datastore (Apache CouchDB / PouchDB)
+        \item Progressive JS Single Page Application wrapped in Native code
+for cross-platform support using Capacitor
+        \item JSON Forms
+        \item Javascript mapping library (LeafLet or OpenLayers)
+        \item Plugin architecture
+        \item APIs for data interactions
+
     \end{itemize}
 \end{frame}
+
+\begin{frame}{FAIMS 3.0 development approach}
+Other planned, but not yet elaborated, technical capabilities include:
+    \begin{itemize}[label=\textbullet]
+        \item Web application to provide GUI to produce definition files
+        \item 'Real' user management and security
+        \item Interoperability with Cloudstor, EOSC nodes, ELNs, domain repositories (data `round-trip' export-modify-import)
+        \item Device support (cameras, printers, instruments, etc.)
+        \item Offline mapping
+        \item Audio/video management
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{FAIMS 3.0 development progress}
+    \framesubtitle{Development Progress}        
+        \begin{itemize}[label=\textbullet]
+            \item \href{https://docs.google.com/document/d/13eTN8jhJa3Pgs9GOdo7r4jtIQcskNo7ikxJcBDBKHzw/edit}{Technical Elaboration Report} was approved in February. This established the proof-of-concept for FAIMS3. 
+          \item \href{https://github.com/FAIMS/FAIMS3/releases/tag/v0.1.0-alpha}{Alpha prototype} was released on 11 June 2021.  
+          \item Alpha prototype passed \href{https://doi.org/10.5281/zenodo.5030772}{user-acceptance testing} on 15 June 2021 (see next slide).
+        \item FAIMS3 code has been licensed under the \href{https://www.apache.org/licenses/LICENSE-2.0}{Apache2} license, a Developer Contribution agreement is being applied to all code affirming the license. 
+        \item The FAIMS3 repository is now public on \href{https://github.com/FAIMS/FAIMS3}{GitHub}.
+        \item FAIMS3 Beta development commenced on 5 July 2021 and will conclude 1 November. 
+
+    \end{itemize}
+
+
+
+\end{frame} 
+
 
 \begin{frame}{Thank you!}
 PDF and source code for this presentation is available at: 
@@ -313,19 +344,20 @@ This work is licensed under a Creative Commons Attribution 4.0 International Lic
 
 % In-depth information or additional details for reference
 
-\section{Extras: CAA Australasia Abstract}
 
-\begin{frame}[allowframebreaks]{Abstract}
+% \section{Extras: CAA Australasia Abstract}
+
+% \begin{frame}[allowframebreaks]{Abstract}
     
-    Fieldwork is time consuming and researchers are always looking at ways to increase efficiency in data recording in the field, while also improving our ability to share reusable data following international good practices like the Transparency and Openness Principles (TOP) and Findable, Accessible, Interoperable, and Reusable (FAIR) data principles. Achieving these goals is easier when data is born digital, but commercial software is not optimised for research and bespoke software is expensive to build and onerous to maintain. The Australian Research Data Commons (ARDC) recently awarded the Field Acquired Information Management Systems (FAIMS) Project, based at Macquarie University, a large, three-year grant to renew our existing platform, FAIMS Mobile, which has been customised and deployed at more than 60 workflows on 40 projects worldwide but is reaching end-of-life. FAIMS Electronic Field Notebooks will produce and manage mobile apps for a range of disciplines including not only archaeology, but earth sciences, ecology, and oral history, ensuring data is captured consistently and is well documented. The platform will use modern web technologies and integrate with existing analysis environments to provide a seamless workflow. FAIMS Electronic Field Notebooks will accommodate diverse data capture, localisation and complex workflows, and provide seamless synchronisation, backup and version control, just like FAIMS Mobile. It will also be cross-platform (Android, iOS and Desktop) and self-service allowing uses to customise and deploy modules through a graphic user interface. This presentation will introduce the next generation of FAIMS, and how it can contribute to open research in archaeology.
+%     Fieldwork is time consuming and researchers are always looking at ways to increase efficiency in data recording in the field, while also improving our ability to share reusable data following international good practices like the Transparency and Openness Principles (TOP) and Findable, Accessible, Interoperable, and Reusable (FAIR) data principles. Achieving these goals is easier when data is born digital, but commercial software is not optimised for research and bespoke software is expensive to build and onerous to maintain. The Australian Research Data Commons (ARDC) recently awarded the Field Acquired Information Management Systems (FAIMS) Project, based at Macquarie University, a large, three-year grant to renew our existing platform, FAIMS Mobile, which has been customised and deployed at more than 60 workflows on 40 projects worldwide but is reaching end-of-life. FAIMS Electronic Field Notebooks will produce and manage mobile apps for a range of disciplines including not only archaeology, but earth sciences, ecology, and oral history, ensuring data is captured consistently and is well documented. The platform will use modern web technologies and integrate with existing analysis environments to provide a seamless workflow. FAIMS Electronic Field Notebooks will accommodate diverse data capture, localisation and complex workflows, and provide seamless synchronisation, backup and version control, just like FAIMS Mobile. It will also be cross-platform (Android, iOS and Desktop) and self-service allowing uses to customise and deploy modules through a graphic user interface. This presentation will introduce the next generation of FAIMS, and how it can contribute to open research in archaeology.
     
-    * * *
+%     * * *
     
-    Session 3: Data Management, \href{https://au.caa-international.org/online-conference-2020/}{CAA Australasia Online Conference, 11-12 September 2020} 
+%     Session 3: Data Management, \href{https://au.caa-international.org/online-conference-2020/}{CAA Australasia Online Conference, 11-12 September 2020} 
     
-    \emph{Delivered Friday 11 September by Shawn A Ross}
+%     \emph{Delivered Friday 11 September by Shawn A Ross}
     
-\end{frame}
+% \end{frame}
 
 \section{Extras: FAIMS research-specific features}
 
